@@ -203,7 +203,7 @@ app.use("/user", userRouter);
 const db = require("./db");
 
 // Swagger API documentation setup
-app.use("/", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 const PORT = process.env.PORT || 3000;
 
